@@ -91,9 +91,6 @@ chosen for interpretability of coefficients.
   combination with others, since MI as used here is a marginal, single-feature
   measure. A regularized model could instead be allowed to shrink these
   toward zero rather than removing them outright.
-- **Circular logic with `annual_premium`.** Premium pricing already reflects known risk. 
-  Using it as a feature means the model is trying to predict claims 
-  using a variable that was created to expect those same claims.
 - **No drift monitoring implemented.** New categories like `rideshare` 
   appear in the scoring data but not in training. 
   The model processes them without error, 
