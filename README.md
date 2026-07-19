@@ -41,7 +41,7 @@ loading).
   based on boxplot/MI evidence of weak individual signal for that coverage
   type.
 
-  ### Preprocessing
+### Preprocessing
 - Right-skewed numeric fields (`prior_loss_amount`, `annual_premium`,
   `prior_year_mileage_000`, `vehicle_count`, `driver_count`) log-transformed,
   then scaled with `RobustScaler` alongside all other numeric
